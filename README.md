@@ -4,9 +4,9 @@ An unofficial modernized York University course repository designed to allow for
 # Project Structure / Coding Plan
 
 ## Data Pipeline
-Data retrieval - Webscraping
-Data cleaning - OpenAI LLM
-Data Transformation - TBD
+Data retrieval - Webscraping,
+Data cleaning - OpenAI LLM,
+Data Transformation - TBD,
 Data storage - MySQL
 
 ## Database
