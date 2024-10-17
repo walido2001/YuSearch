@@ -9,8 +9,9 @@ import traceback
 courseRowValue = None
 
 processing = True 
+errorCount = 0
 
-while processing: 
+while processing and errorCount < 6: 
 
     try: 
         driver = webdriver.Chrome()
@@ -81,6 +82,7 @@ while processing:
     except Exception as e: 
         print(f"Error at Course Row Value: {courseRowValue}. Restarting...")
         print(e)
+        errorCount += 1
         sleep(15)
 
 # with open('CourseItinerary.txt', 'w') as json_file:
