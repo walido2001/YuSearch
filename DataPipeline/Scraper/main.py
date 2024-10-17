@@ -59,6 +59,7 @@ while processing and errorCount < 6:
             driver.switch_to.window(tab_secondary_id)
             driver.get(currentCourseURL)
 
+            driver.implicitly_wait(5)
             course_title = driver.find_element(By.XPATH, "/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td/table[1]/tbody/tr/td[1]/h1").text
             course_description = driver.find_element(By.XPATH, "/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td/p[3]").text
 
