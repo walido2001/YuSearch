@@ -42,7 +42,7 @@ while processing and errorCount < 6:
 
         delay_counter = 0
 
-        while courseRowValue != 5005:
+        while courseRowValue != 5020:
 
             if delay_counter == 10:
                 sleep(random.randint(7, 15))
